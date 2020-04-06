@@ -1,0 +1,5 @@
+<app-header></app-header>
+<main class="container mt-3">
+  <app-todo-form (onNewTodo)="onNewTodo($event)"></app-todo-form>
+  <app-todo-list [todos]="todos" (onRemoveTodo)="onRemoveTodo($event)"></app-todo-list>
+</main>
